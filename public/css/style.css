@@ -1,0 +1,244 @@
+@charset "utf-8";
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/********
+* header
+********/
+
+header {
+  border-bottom: 1px solid #ccc;
+  /*padding: 20px 0;*/
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+}
+
+div.header_logo {
+  float: left;
+}
+
+.header_logo img {
+  width: 300px;
+}
+
+div.search_posts {
+  width: 600px;
+  margin: 15px auto 0;
+  text-align: center;
+}
+
+form.search_form {
+  border: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.search_form img {
+  width: 40px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.search_form input[type=text] {
+  width: 500px;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: #666;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+ul.nav_list {
+  float: right;
+  margin-right: 25px;
+  margin-top: -40px;
+}
+
+.nav_list li {
+  display: inline-table;
+  text-align: center;
+  padding: 0 25px;
+}
+
+.nav_list li a {
+  color: #666;
+}
+
+.nav_list li a:hover {
+  color: #FC0077;
+}
+
+/********
+* main
+********/
+main {
+  position: relative;
+  margin-top: 100px;
+}
+
+ul.post_list {
+  padding: 0;
+  width: 66%;
+  height: 100%;
+  list-style: none;
+  overflow: hidden;
+}
+
+.post_list li {
+  float: left;
+  width: 33.3333%;
+}
+
+.post_list li a {
+  display: block;
+}
+
+div.pl_inner {
+  padding: 10px;
+}
+
+figure {
+  background-color: rgba(252, 0, 119, 0.51);
+  width: 100%;
+  height: auto;
+  max-height: 195px;
+  margin: 0;
+}
+
+img.image {
+  width: 100%;
+  height: auto;
+  max-height: 195px;
+  position: relative;
+  transition: .1s ease-in-out;
+}
+
+figure:hover img.image {
+  opacity: .5;
+}
+
+.pl_inner p {
+  padding-top: 3px;
+  color: #666;
+}
+
+p.list_contnet {
+  display: block;
+}
+
+p.bedroom_num {
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+p.bed_num {
+  display: inline-block;
+  font-size: 12px;
+}
+
+div.map_area {
+  width: 33%;
+  height: 100%;
+  background-color: #ccc;
+  right: 0;
+  top: 100px;
+  position: fixed;
+}
+
+div#map {
+  width: 100%;
+  height: 100%;
+}
+
+div.info_title {
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+div.info_price {
+  text-align: center;
+  margin-top: 5px;
+  padding-left: 12.5px;
+}
+
+/********
+* footer
+********/
+footer {
+  background-color: #FF5A5F;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  z-index: 999;
+  position: relative;
+}
+
+small {
+  display: block;
+  color: #fff;
+}
+
+
+/********
+* single
+********/
+div.catch_image {
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 70vh;
+}
+
+div.single_container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+h2.ar_title {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
+
+p.ar_host {
+  padding-bottom: 15px;
+}
+
+p.ar_guset_num, p.ar_bedroom_num, p.ar_bed_num, p.ar_bathroom_num {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+p.ar_price {
+  padding-top: 15px;
+}
+
+p.ar_description {
+  padding-top: 10px;
+  line-height: 2;
+}
+
+.single_map_area {
+  margin: 15px 0 30px;
+}
+
+#single_map {
+  width: 100%;
+  height: 600px;
+}
