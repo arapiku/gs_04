@@ -116,4 +116,16 @@ class Posts extends \Phalcon\Mvc\Model
         return parent::findFirst($parameters);
     }
 
+    /**
+     * @param mixed $parameters
+     */
+    public static function findByTitle($parameters = null)
+    {
+        $criteria = Posts::query();
+        $criteria->where('title LIKE :title:', ['title' => '%' . $parameters . '%']);
+        $posts = $criteria->execute();
+
+        return $posts;
+    }
+
 }
