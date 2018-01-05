@@ -7,13 +7,17 @@ class PostsController extends \Phalcon\Mvc\Controller
     {
         $posts = Posts::find();
         $this->view->posts = $posts;
-        // $this->assets->addCss("/css/style.css");
         return;
     }
 
     public function singleAction($id) {
         $post = Posts::findFirst($id);
         $this->view->post = $post;
+        return;
+    }
+
+    public function searchAction($title) {
+        $post = Posts::findByTitle($title);
         return;
     }
 
