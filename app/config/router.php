@@ -24,4 +24,9 @@ $router->addGet(
     'Posts::single'
 );
 
+$router->addGet(
+    '/search/{title}',
+    'Posts::search'
+);
+
 $router->handle();
